@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الصلاة الإسلامية</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x600/007bff/ffffff?text=الصلاة+في+الإسلام') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .prayer-card {
+            transition: transform 0.3s;
+        }
+        .prayer-card:hover {
+            transform: scale(1.05);
+        }
+        .highlight {
+            border: 2px solid #ffc107;
+            background-color: #fff3cd;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-mosque"></i> دليل الصلاة</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#introduction">المقدمة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#times">أوقات الصلاة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#steps">خطوات الصلاة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">الأسئلة الشائعة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <section class="hero">
+        <div class="container">
+            <h1>دليل الصلاة الإسلامية</h1>
+            <p class="lead">تعرف على الصلاة وأدائها بطريقة احترافية وتفاعلية</p>
+            <a href="#times" class="btn btn-light btn-lg"><i class="fas fa-clock"></i> عرض أوقات الصلاة</a>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <!-- المقدمة -->
+        <section id="introduction" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-info-circle"></i> ما هي الصلاة؟</h2>
+            <p>الصلاة هي الركن الثاني من أركان الإسلام، وهي رابطة مباشرة بين العبد وربه. تُؤدى خمس مرات يومياً، وتساعد في تنظيم الحياة وتعزيز الإيمان والروحانية. قال الله تعالى: "إِنَّ الصَّلَاةَ تَنْهَى عَنِ الْفَحْشَاءِ وَالْمُنْكَرِ" (سورة العنكبوت: 45).</p>
+        </section>
+
+        <!-- أوقات الصلاة -->
+        <section id="times" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-clock"></i> أوقات الصلاة</h2>
+            <p>أوقات الصلاة تختلف حسب الموقع الجغرافي. إليك الأوقات الدقيقة لمدينة القاهرة (يمكن تغييرها في الكود):</p>
+            <div class="row" id="prayer-times">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+        </section>
+
+        <!-- خطوات الصلاة -->
+        <section id="steps" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-list-ol"></i> خطوات أداء الصلاة</h2>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">التطهير والوضوء.</li>
+                <li class="list-group-item">التكبير (الله أكبر) ورفع اليدين إلى الأذنين.</li>
+                <li class="list-group-item">القراءة من القرآن (سورة الفاتحة وآية أخرى).</li>
+                <li class="list-group-item">الركوع مع التسبيح (سبحان ربي العظيم).</li>
+                <li class="list-group-item">السجود (سبحان ربي الأعلى).</li>
+                <li class="list-group-item">الجلوس بين السجدتين.</li>
+                <li class="list-group-item">التشهد والصلاة على النبي.</li>
+                <li class="list-group-item">التسليم (السلام عليكم ورحمة الله).</li>
+            </ol>
+            <p class="mt-3">يجب توجيه القبلة نحو الكعبة في مكة. للمزيد، زر <a href="https://www.islamqa.info" target="_blank">إسلام ويب</a>.</p>
+        </section>
+
+        <!-- الأسئلة الشائعة -->
+        <section id="faq" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-question-circle"></i> الأسئلة الشائعة</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">ما هي أهمية الصلاة؟</button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">الصلاة تمنع الفحشاء والمنكر، وتذكر المسلم بربه، وتساعد في بناء الانضباط والسلام الداخلي.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">هل يمكن تأخير الصلاة؟</button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">يُفضل أداؤها في وقتها، لكن يمكن تأخيرها لأسباب مشروعة مع القضاء لاحقاً.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- نموذج الاتصال -->
+        <section id="contact" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-envelope"></i> اتصل بنا</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">الاسم</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">الرسالة</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> إرسال</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- الفوتر -->
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript للتفاعل مع API
+        async function fetchPrayerTimes() {
+            const city = 'Cairo'; // يمكن تغييره إلى مدينة أخرى
+            const country = 'Egypt';
+            const url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=2`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const timings = data.data.timings;
+                const prayers = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+                const arabicNames = { Fajr: 'الفجر', Dhuhr: 'الظهر', Asr: 'العصر', Maghrib: 'المغرب', Isha: 'العشاء' };
+
+                const container = document.getElementById('prayer-times');
+                const now = new Date();
+                const currentTime = now.getHours() * 60 + now.getMinutes();
+
+                prayers.forEach(prayer => {
+                    const time = timings[prayer];
+                    const [hours, minutes] = time.split(':').map(Number);
+                    const prayerMinutes = hours * 60 + minutes;
+                    const isNext = prayerMinutes > currentTime;
+
+                    const col = document.createElement('div');
+                    col.className = 'col-md-2 mb-3';
+                    col.innerHTML = `
+                        <div class="card prayer-card ${isNext ? 'highlight' : ''}">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">${arabicNames[prayer]}</h5>
+                                <p class="card-text">${time}</p>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(col);
+                });
+            } catch (error) {
+                console.error('خطأ في تحميل أوقات الصلاة:', error);
+                document.getElementById('prayer-times').innerHTML = '<p class="text-danger">فشل في تحميل الأوقات. تحقق من الاتصال بالإنترنت.</p>';
+            }
+        }
+        fetchPrayerTimes();
+    </script>
+</body>
+</html>
